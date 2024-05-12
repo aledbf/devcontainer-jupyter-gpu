@@ -12,6 +12,16 @@
       ]
     }
   },
+  "forwardPorts": [
+    8888
+  ],
+  "portsAttributes": {
+    "8888": {
+      "label": "Jupyter",
+      "requireLocalPort": true,
+      "onAutoForward": "ignore"
+    }
+  },
   "postCreateCommand": "jupyter notebook --ip 0.0.0.0 --no-browser --allow-root",
   "remoteUser": "root"
 }

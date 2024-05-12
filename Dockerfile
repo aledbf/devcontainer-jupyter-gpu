@@ -13,3 +13,6 @@ RUN pip install ipykernel jupyter
 RUN pip install matplotlib
 RUN pip install scikit-learn
 RUN pip install pandas
+RUN pip install numpy
+
+EXPOSE 8888

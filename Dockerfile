@@ -14,5 +14,6 @@ RUN pip install matplotlib
 RUN pip install scikit-learn
 RUN pip install pandas
 RUN pip install numpy
+RUN pip install --extra-index-url https://pypi.anaconda.org/rapidsai-wheels-nightly/simple --pre jupyterlab_nvdashboard
 
 EXPOSE 8888

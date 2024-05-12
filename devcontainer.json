@@ -1,0 +1,17 @@
+{
+  "name": "Jupyter - GPU",
+  "dockerFile": "Dockerfile",
+  "runArgs": [
+    "--gpus=all",
+    "--runtime=nvidia"
+  ],
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-python.python"
+      ]
+    }
+  },
+  "postCreateCommand": "jupyter notebook --ip 0.0.0.0 --no-browser --allow-root",
+  "remoteUser": "root"
+}

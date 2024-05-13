@@ -9,7 +9,8 @@ RUN apt-get update && \
     apt-get clean -y && \
     rm -rf /var/lib/apt/lists/*
 
-RUN pip install ipykernel jupyter
+RUN pip install ipykernel
+RUN pip install jupyter
 RUN pip install matplotlib
 RUN pip install scikit-learn
 RUN pip install pandas

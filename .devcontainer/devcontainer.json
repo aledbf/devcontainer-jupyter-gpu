@@ -1,6 +1,6 @@
 {
   "name": "Jupyter - GPU",
-  "dockerFile": "Dockerfile",
+  "dockerFile": "../Dockerfile",
   "runArgs": [
     "--gpus=all",
     "--runtime=nvidia"
